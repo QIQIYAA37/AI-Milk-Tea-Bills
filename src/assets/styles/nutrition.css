@@ -1,0 +1,612 @@
+.nutrition-view {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nutrition-view h1 {
+  text-align: center;
+  color: #a67c52;
+  margin-bottom: 30px;
+}
+
+.search-section {
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+  border-color: #a67c52;
+  outline: none;
+}
+
+.btn-search, .btn-ai-search {
+  padding: 12px 20px;
+  background-color: #a67c52;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-search:hover, .btn-ai-search:hover {
+  background-color: #8c6744;
+}
+
+.milk-tea-selection {
+  margin-bottom: 30px;
+}
+
+.milk-tea-selection h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.tea-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f2ea;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tea-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tea-icon {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.tea-info h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.tea-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.selected-tea {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.tea-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.tea-header h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.tea-meta {
+  color: #666;
+  font-size: 14px;
+}
+
+.tea-meta span {
+  margin-right: 10px;
+}
+
+.customization {
+  margin-bottom: 30px;
+}
+
+.customization h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.custom-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.option-group {
+  margin-bottom: 20px;
+}
+
+.option-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #444;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.option-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.custom-btn {
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.custom-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.custom-btn.active {
+  background-color: #a67c52;
+  color: white;
+  border-color: #a67c52;
+}
+
+.toppings-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.topping-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.topping-item input {
+  margin-right: 8px;
+}
+
+.nutrition-info {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.nutrition-info h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.nutrition-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nutrition-stat {
+  text-align: center;
+  flex: 1;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin: 0 10px;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #a67c52;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.nutrition-card {
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nutrition-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a67c52;
+  margin-bottom: 5px;
+}
+
+.nutrition-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.daily-percentage {
+  margin-top: 20px;
+}
+
+.daily-percentage h4 {
+  margin: 0 0 15px 0;
+  color: #444;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.percentage-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.percentage-item {
+  display: flex;
+  align-items: center;
+}
+
+.percentage-label {
+  width: 80px;
+  font-size: 14px;
+  color: #555;
+}
+
+.percentage-bar-container {
+  flex: 1;
+  height: 20px;
+  background-color: #e9e9e9;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.percentage-bar {
+  height: 100%;
+  background-color: #a67c52;
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+
+.percentage-bar.warning {
+  background-color: #e74c3c;
+}
+
+.percentage-bar-container span {
+  position: absolute;
+  right: 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.ai-analysis-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f0f0ff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ai-analysis-section h3 {
+  margin: 0 0 10px 0;
+  color: #a67c52;
+  font-size: 18px;
+}
+
+.ai-analysis-section p {
+  margin: 0 0 15px 0;
+  color: #555;
+}
+
+.btn-ai-analysis {
+  padding: 10px 20px;
+  background-color: #a67c52;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-ai-analysis:hover {
+  background-color: #a67c52;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(166, 124, 82, 0.2);
+}
+
+.btn-ai-analysis:disabled {
+  background-color: #b39ddb;
+  cursor: not-allowed;
+}
+
+/* 健康小贴士样式 */
+.health-tips {
+  margin-top: 40px;
+  background-color: #f9f9fc;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.health-tips h3 {
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.health-tips h3:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 40px;
+  height: 3px;
+  background-color: #a67c52;
+  border-radius: 3px;
+}
+
+.tips-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tip {
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #a67c52;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tip-icon {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #a67c52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+}
+
+.tip-content {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.loading-tips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #666;
+}
+
+.loading-spinner {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #a67c52;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 15px;
+}
+
+/* 美化AI标签 */
+.ai-tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.ai-tag {
+  padding: 5px 10px;
+  background-color: #f9f2ea;
+  color: #a67c52;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.empty-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.empty-state h2 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 22px;
+}
+
+.empty-state p {
+  margin: 0 0 10px 0;
+  color: #666;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .custom-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .nutrition-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nutrition-stat {
+    margin: 0;
+  }
+}
+
+/* 奶茶介绍卡片样式 */
+.tea-introduction-card {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tea-introduction-card h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.tea-introduction-card h3:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 40px;
+  height: 3px;
+  background-color: #a67c52;
+  border-radius: 3px;
+}
+
+.tea-intro-content {
+  position: relative;
+}
+
+.intro-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.intro-icon {
+  font-size: 32px;
+  margin-right: 15px;
+  background-color: #f5f0ff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-title {
+  flex: 1;
+}
+
+.intro-title h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.intro-brand {
+  color: #666;
+  font-size: 14px;
+}
+
+.intro-description {
+  color: #333;
+  line-height: 1.6;
+}
+
+.intro-description p {
+  margin: 0 0 15px 0;
+}
+
+.intro-ingredients, .intro-features {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.intro-ingredients li, .intro-features li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.intro-description h5 {
+  margin: 25px 0 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.intro-description strong {
+  color: #a67c52;
+  font-weight: 600;
+}
+
+.intro-description ul li:before {
+  content: '•';
+  color: #a67c52;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800">
+  <!-- 奶茶背景 -->
+  <rect width="1000" height="800" fill="#f0d6a7"/>
+  
+  <!-- 奶茶液体部分 -->
+  <path d="M0 300 Q 250 200 500 300 Q 750 400 1000 300 L 1000 800 L 0 800 Z" fill="#d9a45b"/>
+  
+  <!-- 珍珠 -->
+  <!-- 第一行 -->
+  <circle cx="80" cy="400" r="30" fill="#5e4024"/>
+  <circle cx="180" cy="480" r="40" fill="#5e4024"/>
+  <circle cx="280" cy="380" r="25" fill="#5e4024"/>
+  <circle cx="380" cy="450" r="35" fill="#5e4024"/>
+  <circle cx="480" cy="500" r="45" fill="#5e4024"/>
+  <circle cx="580" cy="420" r="30" fill="#5e4024"/>
+  <circle cx="680" cy="470" r="40" fill="#5e4024"/>
+  <circle cx="780" cy="390" r="35" fill="#5e4024"/>
+  <circle cx="880" cy="480" r="30" fill="#5e4024"/>
+  <circle cx="980" cy="430" r="40" fill="#5e4024"/>
+  
+  <!-- 第二行 -->
+  <circle cx="30" cy="550" r="35" fill="#5e4024"/>
+  <circle cx="130" cy="600" r="25" fill="#5e4024"/>
+  <circle cx="230" cy="520" r="40" fill="#5e4024"/>
+  <circle cx="330" cy="580" r="30" fill="#5e4024"/>
+  <circle cx="430" cy="630" r="35" fill="#5e4024"/>
+  <circle cx="530" cy="550" r="45" fill="#5e4024"/>
+  <circle cx="630" cy="600" r="30" fill="#5e4024"/>
+  <circle cx="730" cy="530" r="40" fill="#5e4024"/>
+  <circle cx="830" cy="590" r="35" fill="#5e4024"/>
+  <circle cx="930" cy="620" r="30" fill="#5e4024"/>
+  
+  <!-- 第三行 -->
+  <circle cx="80" cy="680" r="40" fill="#5e4024"/>
+  <circle cx="180" cy="720" r="30" fill="#5e4024"/>
+  <circle cx="280" cy="650" r="35" fill="#5e4024"/>
+  <circle cx="380" cy="700" r="40" fill="#5e4024"/>
+  <circle cx="480" cy="670" r="30" fill="#5e4024"/>
+  <circle cx="580" cy="730" r="45" fill="#5e4024"/>
+  <circle cx="680" cy="680" r="35" fill="#5e4024"/>
+  <circle cx="780" cy="720" r="30" fill="#5e4024"/>
+  <circle cx="880" cy="650" r="40" fill="#5e4024"/>
+  <circle cx="980" cy="700" r="35" fill="#5e4024"/>
+</svg>
